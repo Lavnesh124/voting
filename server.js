@@ -12,7 +12,10 @@ app.use(body_parser.json());
 const userRoutes=require('./routes/userRoutes');
 const candidateRoutes=require('./routes/candidateRoutes');
 
-
+app.get('/', (req,res)=>{
+    console.log("reached");
+}
+     );
 app.use('/user',userRoutes);
 app.use('/candidate',candidateRoutes);
 
